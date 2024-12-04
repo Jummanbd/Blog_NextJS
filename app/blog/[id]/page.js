@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import styles from "./page.module.css";
 
 async function generData() {
-  const res = await fetch("http://localhost:10000/api/posts", {
+  const res = await fetch("http://localhost:3000/api/posts", {
     next:{
       cache: "no-store",
       revalidate:10,
